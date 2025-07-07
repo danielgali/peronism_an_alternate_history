@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Peronism: An Alternate History
 
 ## Included Libraries
 
