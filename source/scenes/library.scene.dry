@@ -9,8 +9,8 @@ Herein contains relevant information about the government and politics of the Ge
 
 @menu
 
-- @government: Germany's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
+- @government: Argentina's system of government
+- @argentina_timeline: Timeline of the Republic of Argentina before 1946
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -23,22 +23,22 @@ Herein contains relevant information about the government and politics of the Ge
 @government
 go-to: menu
 
-The German Republic, called by some of our detractors as the "Weimar Republic", is a parliamentary republic with a somewhat weak president and a strong parliament, called the Reichstag. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
+The Republic of Argentina is a presidential republic with a strong president and a somewhat weak parliament, the Congress of Argentina. Congress is responsible for passing laws, while the President has very important governing responsibilities.
 
-The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+Congress is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
 
 The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
 
-Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+Argentina is divided into a number of provinces, each of which have their own governments with their own constitutions. By far the largest and most important state is Buenos Aires. There also are several national territories that haven't been made provinces yet.
 
-@weimar_timeline
+@argentina_timeline
 go-to: menu
 
-= Timeline of the SPD and the Republic (until 1928)
+= Timeline of Argentina (from 1912 until 1946)
 
-**1875**: The SPD is formed as a merger of the General German Workers' Association, founded by Ferdinand Lassalle, and the Social Democratic Workers' Party of Germany, led by Wilhelm Liebknecht and August Bebel. Eventually, the SPD grows to become the largest party in the German Empire.
+**1912**: The Sáenz Peña Law is sanctioned, establishing universal, secret and compulsory suffrage among all male citizens, a marked improvement from the previous fraudulent elections.
 
-**1914**: The Great War begins. The SPD votes in favor of war credits, with substantial internal dissent. This begins a policy of *Burgfriedenspolitik*, a general peace between all political parties and trade unions.
+**1914**: The Great War begins. Argentina maintains a position of neutrality throughout the war.
 
 **1917**: The USPD, a left-wing anti-war split from the SPD, is formed.
 
@@ -65,14 +65,14 @@ go-to: cabinet if spd_in_government; menu if not spd_in_government
 
 = Current Government
 
-President: [+ president +]
+President: [+ president +] ([+ president_party +])
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Vicepresident: [+ vicepresident +] ([+ vicepresident_party +])
 
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]%
+[+ pj_name +]: [+ pj_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 Z + BVP: [+ z_r +]%
@@ -103,7 +103,7 @@ Current cabinet:
 
 Labor: [+ labor_minister_party +]
 
-Interior: [+ interior_minister_party +]
+Public Works: [+ interior_minister_party +]
 
 Finance: [+ finance_minister_party +]
 
@@ -111,9 +111,9 @@ Economic: [+ economic_minister_party +]
 
 Justice: [+ justice_minister_party +]
 
-Foreign: [+ foreign_minister_party +]
+Foreign and Worship: [+ foreign_minister_party +]
 
-Reichswehr: [+ reichswehr_minister_party +]
+War: [+ reichswehr_minister_party +]
 
 Agriculture: [+ agriculture_minister_party +]
 
