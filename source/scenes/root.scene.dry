@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 1946;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -36,9 +36,9 @@ Q.old_demographics = 0;
 Q.use_decimals = 0;
 
 // party resources
-Q.resources = 2;
+Q.resources = 4;
 // party dues
-Q.dues = 2;
+Q.dues = 4;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
@@ -48,16 +48,16 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
 // should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
+Q.left_strength = 10;
+Q.left_dissent = 10;
+Q.radicals_strength = 20;
+Q.radicals_dissent = 25;
+Q.labor_strength = 30;
 Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.traditionalist_strength = 10;
+Q.traditionalist_dissent = 20;
+Q.feminist_strength = 15;
+Q.feminist_dissent = 0;
 
 // secret events...
 Q.unions_independent = 0;
@@ -65,17 +65,17 @@ Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
 
-// have we discovered neorevisionism?
-Q.neorevisionism = 0;
+// have we discovered feminism?
+Q.feminism = 0;
 
-// crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
+// crisis_urgency indicates how seriously the PJ is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
-// nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
-Q.nazi_urgency = 0;
-// radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
+// coup_urgency indicates how seriously the PJ takes the military - scale from 0 to 10.
+Q.coup_urgency = 0;
+// radicalization indicates how radical the PJ's rhetoric is - scale from 0 to 10.
 Q.radicalization = 0;
-// Support for the WTB plan and proto-Keynesian works creation plans in general
-Q.wtb_support = 0;
+// Support for the Five-year plan and Keynesian works creation plans in general
+Q.pq_support = 0;
 // Support for Pacifism within the SPD relative to 1928
 Q.pacifism = 0;
 // Support for democratic reform within the SPD relative to 1928
@@ -536,7 +536,6 @@ Q.march_on_berlin_timer = 0;
 Q.wels_advisor = 1; // Otto Wels
 Q.muller_advisor = 1; // Hermann Müller
 Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
 Q.crispien_advisor = 0; // Arthur Crispien
 Q.hilferding_advisor = 1; // Rudolf Hilferding
 
